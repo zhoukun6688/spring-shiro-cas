@@ -1,5 +1,5 @@
 # spring-shiro-cas
-sso单点登录技术
+sso单点登录技术+shiro权限控制
 # 模块说明
 ## cas 
 单点登录服务器模块，集中认证中心
