@@ -67,6 +67,17 @@ public class CourseController extends BaseController {
     	List<String> list = Arrays.asList("这是登录失败的后返回的结果","失败结果1","失败结果2");
     	return list;
     }
+    
+    
+    @RequestMapping("queryByAjax")
+    @ResponseBody
+    @RequiresPermissions("query")
+    public List<String> queryByAjax(String username,String content) {
+    	List<String> list = Arrays.asList("刘德华","张学友","黎明","郭富城");
+    	System.out.println(username);
+    	System.out.println(content);
+    	return list;
+    }
 
    
 
