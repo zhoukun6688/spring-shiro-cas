@@ -22,5 +22,6 @@ applicationOne和applicationTwo，这两个应用程序部署在不同的tomcat�
 安装完jar后，输入mvn命令：clean:tomcat7:run  启动项目，注意applicationOne运行在8083端口上，applicationTwo运行在8082端口上，cas是运行在8081端口上，因为这些端口号在项目中已经配置好，如果想改，一定将各个应用程序中的shiro.properties文件一块更改。<br>
 将applicationOne和applicationTwo启动成功后，cas也启动成功后，在浏览器输入http://localhost:8082/app2/course/index ，这时候，我们会调到cas的登录页，输入用户名：admin 密码：admin@2015 完成登录，这时候我们成功登录app2，当我们点击跳往applicationOne时，此时applicationOne并没有让我们登录，到此为止，单点登录成功实现。
 ### 测试权限
-点击页面中的超链接：app1中查询所有课程，以及访问没有权限的方法，此时都会进行shiro安全认证。
+点击页面中的超链接：app1中查询所有课程，以及访问没有权限的方法，此时都会进行shiro安全认证。若用户访问了没有权限的方法，系统会自动抛出异常，然后异常被BaseController中的authenticationException（）捕获，返回一个“你没有权限访问的字符串”。
+
 
