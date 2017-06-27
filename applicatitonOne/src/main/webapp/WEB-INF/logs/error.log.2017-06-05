@@ -1,0 +1,4 @@
+2017-06-05 15:17:45 [ localhost-startStop-1:2134 ] - [ ERROR ] maxIdle is deprecated
+2017-06-05 15:20:23 [ localhost-startStop-1:2276 ] - [ ERROR ] maxIdle is deprecated
+2017-06-05 15:23:18 [ localhost-startStop-1:2363 ] - [ ERROR ] maxIdle is deprecated
+2017-06-05 15:35:30 [ localhost-startStop-1:3391 ] - [ ERROR ] maxIdle is deprecated
