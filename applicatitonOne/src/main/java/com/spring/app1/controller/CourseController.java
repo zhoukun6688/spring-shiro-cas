@@ -32,7 +32,7 @@ public class CourseController extends BaseController {
     }
 
    
-    @RequiresPermissions("retrieve")
+    @RequiresPermissions("query")
     @RequestMapping("queryAllCourse")
     @ResponseBody
     public List<Course> queryAllCourse() {
