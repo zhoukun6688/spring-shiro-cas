@@ -24,4 +24,8 @@ applicationOne和applicationTwo，这两个应用程序部署在不同的tomcat�
 ### 测试权限
 点击页面中的超链接：app1中查询所有课程，以及访问没有权限的方法，此时都会进行shiro安全认证。若用户访问了没有权限的方法，系统会自动抛出异常，然后异常被BaseController中的authenticationException（）捕获，返回一个“你没有权限访问的字符串”。
 
+### 项目详细说明
+   下列是shiro-cas的详细系列博客，读者可以挑shiro-cas的系列看
+
+http://blog.csdn.net/column/details/16896.html
 
